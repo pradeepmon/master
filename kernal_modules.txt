@@ -1,0 +1,12 @@
+-> if you want to extend the functionality of the kernal without reboot
+-> modules means device & drivers
+
+lsmod	--> list the modules
+/proc/modules	--> list the loaded modules
+modinfo module	--> module information
+modprobe module	--> add the module
+modprobe -r module	--> remove the module
+rmmod module	--> remove module
+depmod -v
+/lib/modules/kernal-version/modules/dep
+modprobe -rf module	--> remove forcely(not used in production server)

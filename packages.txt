@@ -1,0 +1,29 @@
+Packages - collection of files installable [ RPM(.rpm) & YUM ]
+
+RPM [Redhat Packet Manager]
+rpm -ivh packagename.version.release.arch.rpm	--> install file
+i -> install	|	rpm -q packagename -> queue all the packages
+v -> verbose	|	q   -> queue
+h -> hashing	|	rpm -qc packagename -> queue the conf. file   
+rpm -qd packagename -> queue the doc. file
+rpm -e package -> erase/remove
+rpm -Uvh packagename.version.release.arch.rpm	--> update file
+u -> update
+
+challange with rpm:
+1. It will not resolve the dependency
+2. package should be in current working directory
+
+==================================================================================
+
+YUM [YellowDog Update Manager]
+
+yum install package
+yum info package
+yum remove package
+yum list all
+yum update package
+
+-> yum is a centralised repository (everyone can be accesed)
+-> it resolves dependency
+-> can be installed anywhere in the n/w
