@@ -1,0 +1,10 @@
+tcpdump - to capture all the interface n/w traffic 
+tcpdump -i ens33	--> to capture the n/w traffic on single interface
+tcpdump -c 5 -i ens33	--> to capture no. of packets in interface
+tcpdump src port 22 -c 5	--> to capture packets in source port
+tcpdump dst port 22 -c 5	--> to capture packets in destination port
+tcpdump dst ip and src port 22 -c 10	-->dest. ip and source port
+tcpdump src ip and src port 22 -c 10	-->source ip and source port
+tcpdump src port 22 -c 10 -w capture.pcap    --> packets will be written on the file .pcap
+tcpdump -r capture.pcap	--> read the .pcap file
+tdump icmp

@@ -1,0 +1,7 @@
+yum install yum-plugin-versionlock
+yum versionlock list
+yum versionlock add vsftpd
+yum versionlock delete vsftpd
+yum history list -> list the history
+yum history info task_id -> task information
+yum history undo task_id -> undo the task
